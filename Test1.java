@@ -11,6 +11,10 @@ public class Test1 {
 		/*
 		 * Examine the function 'isValid'. What does it validate?
 		 * For which cases the validation fails?
+		 * 
+		 * It validates IP address.
+		 * Valid is 0.0.0.0 - 255.255.255.255
+		 * Not Valid is anything above 255
 		 */
 		
 		String input = args[0];
