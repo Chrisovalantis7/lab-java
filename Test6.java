@@ -52,9 +52,15 @@ public class Test6 {
       }
       
     }
-    catch(ClassNotFoundException ex){
-      logger.log(Level.SEVERE, "Cannot perform input. Class not found.", ex);
-    }
+    /*
+     * Compilation error. Unreachable catch block.
+     * This code is unreachable. This type of exception is never thrown from the try statement body. 
+     * 
+     */
+    /* catch(ClassNotFoundException ex){
+     * logger.log(Level.SEVERE, "Cannot perform input. Class not found.", ex);
+     * }
+     */
     catch(IOException ex){
       logger.log(Level.SEVERE, "Cannot perform input.", ex);
     }
