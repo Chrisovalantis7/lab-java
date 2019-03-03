@@ -5,6 +5,10 @@ import java.util.logging.Logger;
 
 /*
  * Check the following class and identify what issues it might entail.
+ * Answer:
+ * 1. 	There isn't setter for uuid, so you cannot change it
+ * 2. 	If checkServer() method returns false, then we create object with nulls -> Waste Memory
+ * 3.	"telno" has not been initialized, so it is null -> Exception if you use it before initialize it.
  */
 public class EmailAccount {
 
